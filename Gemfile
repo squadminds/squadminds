@@ -12,8 +12,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# RSpec
+gem 'rspec', '~> 3.0'
+
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i(mri mingw x64_mingw)
   gem 'dotenv-rails'
 end
 
@@ -23,15 +26,20 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener'
+  gem 'rubocop'
+  gem 'rubocop-rspec'
+  gem 'rails-erd'
 end
 
-group :test do
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+group(:test) do
+  gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
+  gem 'rspec_api_documentation'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
 
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
@@ -41,7 +49,8 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'modernizr-rails'
 
-
 gem 'devise'
 gem 'pundit'
 
+gem 'sentry-raven'
+gem 'sidekiq'
