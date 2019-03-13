@@ -1,0 +1,21 @@
+doctype html
+html.no-js[lang="en-us"]
+  head
+    title
+      | BnB IT Services
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="author" content="BnB IT Services"]
+    link[rel="shortcut icon" href="/favicon.png"]
+    link[rel="apple-touch-icon" sizes="144x144" href="/favicon-retina-ipad.png"]
+    link[rel="apple-touch-icon" sizes="114x114" href="/favicon-retina-iphone.png"]
+    link[rel="apple-touch-icon" sizes="72x72" href="/favicon-standard-ipad.png"]
+    link[rel="apple-touch-icon" sizes="57x57" href="/favicon-standard-iphone.png"]
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag :modernizr
+  body
+    = yield
+    = javascript_include_tag 'application'
+    = yield :extra_page_js
