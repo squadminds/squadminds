@@ -1,0 +1,531 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  TargetRailsVersion: 4.1
+  DisplayCopNames: true
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'system/**/*'
+    - 'test/**/*'
+    - 'vendor/bundle/**/*'
+    - 'vendor/cache/**/*'
+    - 'vendor/gems/**/*'
+    - 'vendor/ruby/**/*'
+require:
+  - rubocop-rspec
+Bundler/OrderedGems:
+  Enabled: false
+
+#################### Layout ###############################
+
+Layout/AccessModifierIndentation:
+  Enabled: true
+
+Layout/AlignArray:
+  Enabled: true
+
+Layout/AlignHash:
+  Enabled: true
+
+Layout/AlignParameters:
+  Enabled: true
+
+Layout/BlockEndNewline:
+  Enabled: true
+
+Layout/CaseIndentation:
+  Enabled: true
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
+Layout/CommentIndentation:
+  Enabled: true
+
+Layout/DotPosition:
+  Enabled: true
+
+Layout/ElseAlignment:
+  Enabled: true
+
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+
+Layout/EmptyLines:
+  Enabled: true
+
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+Layout/EmptyLinesAroundBeginBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: true
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Layout/EndOfLine:
+  Enabled: true
+
+Layout/ExtraSpacing:
+  Enabled: true
+
+Layout/InitialIndentation:
+  Enabled: true
+
+Layout/FirstParameterIndentation:
+  Enabled: true
+
+Layout/IndentationConsistency:
+  Enabled: true
+
+Layout/IndentationWidth:
+  Enabled: true
+
+Layout/IndentArray:
+  Enabled: true
+
+Layout/IndentAssignment:
+  Enabled: true
+
+Layout/IndentHash:
+  Enabled: true
+
+Layout/IndentHeredoc:
+  Enabled: true
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+  Enabled: true
+
+Layout/LeadingCommentSpace:
+  Enabled: true
+
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+
+Layout/MultilineBlockLayout:
+  Enabled: true
+
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Enabled: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+Layout/RescueEnsureAlignment:
+  Enabled: true
+
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+
+Layout/SpaceAfterColon:
+  Enabled: true
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceAfterMethodName:
+  Enabled: true
+
+Layout/SpaceAfterNot:
+  Enabled: true
+
+Layout/SpaceAfterSemicolon:
+  Enabled: true
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+Layout/SpaceBeforeComma:
+  Enabled: true
+
+Layout/SpaceBeforeComment:
+  Enabled: true
+
+Layout/SpaceBeforeSemicolon:
+  Enabled: false # TODO: fix
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+
+Layout/SpaceAroundBlockParameters:
+  Enabled: true
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+Layout/SpaceInsideArrayPercentLiteral:
+  Enabled: true
+
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Layout/SpaceInsideParens:
+  Enabled: true
+
+Layout/SpaceInsideRangeLiteral:
+  Enabled: true
+
+Layout/SpaceInsideStringInterpolation:
+  Enabled: true
+
+Layout/Tab:
+  Enabled: true
+
+Layout/TrailingBlankLines:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: false # TODO: fix
+Lint/DuplicateMethods:
+  Enabled: false # TODO: fix
+Lint/EmptyWhen:
+  Enabled: false # TODO: fix
+Lint/HandleExceptions:
+  Enabled: false # TODO: fix
+Lint/Loop:
+  Enabled: false # TODO: fix
+Lint/NonLocalExitFromIterator:
+  Enabled: false # TODO: fix
+Lint/SafeNavigationChain:
+  Enabled: false # TODO: fix
+Lint/ShadowedException:
+  Enabled: false # TODO: fix
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false # TODO: fix
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false # TODO: fix
+Lint/UnreachableCode:
+  Enabled: false # TODO: fix
+Lint/UnusedBlockArgument:
+  Enabled: false # TODO: fix
+Lint/UnusedMethodArgument:
+  Enabled: false # TODO: fix
+Lint/UselessAssignment:
+  Enabled: false # TODO: fix
+Lint/Void:
+  Enabled: false # TODO: fix
+
+Security/Eval:
+  Enabled: false # TODO: fix
+Security/MarshalLoad:
+  Enabled: false # TODO: fix
+Security/YAMLLoad:
+  Enabled: false # TODO: fix
+
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/BlockNesting:
+  Enabled: false # TODO: fix
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+  Enabled: false # TODO: fix
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+  Enabled: false # TODO: fix
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Performance/Casecmp:
+  Enabled: false # TODO: fix
+Performance/RedundantMatch:
+  Enabled: false # TODO: fix
+Performance/RedundantMerge:
+  MaxKeyValuePairs: 2
+
+Rails:
+  Enabled: true
+Rails/Exit:
+  Enabled: false # TODO: fix
+Rails/FilePath:
+  Enabled: false # Makes sense an many cases, but have to many false positives and not backward compatible
+Rails/FindBy:
+  Enabled: false # TODO: fix
+Rails/HasAndBelongsToMany:
+  Enabled: false # TODO: fix
+Rails/HttpPositionalArguments:
+  Enabled: false # TODO: rails 5
+Rails/Output:
+  Enabled: false # TODO: fix
+Rails/OutputSafety:
+  Enabled: false # TODO: fix
+Rails/SkipsModelValidations:
+  Enabled: false # TODO: fix
+Rails/TimeZone:
+  Enabled: false
+Rails/Validation:
+  Enabled: false # TODO: fix
+
+RSpec/AnyInstance:
+  Enabled: false # TODO: fix
+RSpec/BeEql:
+  Enabled: true
+RSpec/BeforeAfterAll:
+  Enabled: true
+RSpec/DescribeClass:
+  Enabled: false # TODO: fix
+RSpec/DescribedClass:
+  Enabled: true
+RSpec/DescribeMethod:
+  Enabled: false # TODO: fix
+RSpec/EmptyExampleGroup:
+  Enabled: true
+  Exclude:
+    - 'spec/factories/**/*'
+RSpec/ExampleLength:
+  Enabled: false # TODO: fix
+RSpec/ExampleWording:
+  Enabled: false # TODO: fix
+RSpec/ExpectActual:
+  Enabled: true
+RSpec/FilePath:
+  Enabled: false # TODO: fix
+RSpec/Focus:
+  Enabled: true
+RSpec/HookArgument:
+  EnforcedStyle: example
+RSpec/InstanceVariable:
+  Enabled: false # TODO: fix
+RSpec/IteratedExpectation:
+  Enabled: false # TODO: fix
+RSpec/LeadingSubject:
+  Enabled: false # TODO: fix
+RSpec/LetSetup:
+  Enabled: true
+RSpec/MessageChain:
+  Enabled: false # TODO: fix
+RSpec/MessageExpectation:
+  Enabled: false # TODO: fix
+RSpec/MessageSpies:
+  Enabled: false
+RSpec/MultipleDescribes:
+  Enabled: true
+RSpec/MultipleExpectations:
+  Enabled: false # TODO: fix
+RSpec/NamedSubject:
+  Enabled: false # TODO: fix
+RSpec/NestedGroups:
+  Enabled: false # TODO: fix
+RSpec/NotToNot:
+  EnforcedStyle: not_to
+  Enabled: true
+RSpec/SubjectStub:
+  Enabled: false # TODO: fix
+RSpec/VerifiedDoubles:
+  Enabled: false # TODO: fix
+
+Naming/AccessorMethodName:
+  Enabled: false # TODO: fix
+Style/AndOr:
+  Enabled: false # TODO: fix
+Style/CaseEquality:
+  Enabled: false # TODO: fix
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false # TODO: fix
+Style/ConditionalAssignment:
+  Enabled: false # TODO: fix
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false # TODO: fix
+Style/EachWithObject:
+  Enabled: false # TODO: fix
+Style/EmptyCaseCondition:
+  Enabled: false # TODO: fix
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/Encoding:
+  Enabled: true
+Style/For:
+  Enabled: false # TODO: fix
+Style/FormatString:
+  Enabled: false # TODO: fix
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GlobalVars:
+  AllowedVariables: []
+Style/GuardClause:
+  Enabled: false # TODO: fix
+Style/IfInsideElse:
+  Enabled: false # TODO: fix
+Style/IfUnlessModifier:
+  Enabled: false # TODO: fix
+Style/InfiniteLoop:
+  Enabled: false # TODO: fix
+Style/InverseMethods:
+  Enabled: false # TODO: fix
+Style/Lambda:
+  Enabled: false # TODO: fix
+Style/MethodMissingSuper:
+  Enabled: false # TODO: fix
+Style/MissingRespondToMissing:
+  Enabled: false # TODO: fix
+Naming/MethodName:
+  Enabled: false # TODO: fix
+Style/ModuleFunction:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false # TODO: fix
+Style/MultilineIfModifier:
+  Enabled: false # TODO: fix
+Style/MultilineTernaryOperator:
+  Enabled: false # TODO: fix
+Style/MutableConstant:
+  Enabled: false # TODO: fix
+Style/NestedTernaryOperator:
+  Enabled: false # TODO: fix
+Style/Next:
+  Enabled: false # TODO: fix
+Style/NumericPredicate:
+  Enabled: false # TODO: fix
+Style/OptionHash:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: true
+  PreferredDelimiters:
+    '%i': '()'
+    '%I': '()'
+    '%w': '()'
+    '%W': '()'
+Style/PerlBackrefs:
+  Enabled: false # TODO: fix
+Naming/PredicateName:
+  Enabled: false # TODO: fix
+Style/RedundantSelf:
+  Enabled: false # TODO: fix
+Style/RegexpLiteral:
+  Enabled: false # TODO: fix
+Style/RescueModifier:
+  Enabled: false # TODO: fix
+Style/SafeNavigation:
+  Enabled: false # TODO: fix
+Style/Semicolon:
+  Enabled: false # TODO: fix
+Style/SignalException:
+  EnforcedStyle: only_raise
+  Enabled: false # TODO: fix
+Style/SingleLineBlockParams:
+  Enabled: false # TODO: fix
+Style/SpecialGlobalVars:
+  Enabled: false # TODO: fix
+Style/StructInheritance:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: true
+Style/UnneededInterpolation:
+  Enabled: false # TODO: fix
+Naming/VariableNumber:
+  EnforcedStyle: normalcase
+Style/WhileUntilDo:
+  Enabled: false # TODO: fix
+Style/WhileUntilModifier:
+  Enabled: false # TODO: fix
+
+# Rubocop parse fails
+Rails/Blank:
+  Enabled: false
+# RSpec false positives
+Style/MixinGrouping:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+# We have lambdas in constants, this cause false positives
+Rails/RelativeDateConstant:
+  Enabled: false
+
+# WIP
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+  Exclude:
+    - 'app/**/*'
+    - 'lib/*'
+    - 'config/**/*'
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  Exclude:
+    - 'app/**/*'
+    - 'lib/*'
+    - 'config/**/*'
+  IgnoredMethods:
+    - context
+    - describe
+    - gem
+    - include
+    - include_examples
+    - it
+    - it_behaves_like
+    - not_to
+    - permissions
+    - raise
+    - require
+    - require_relative
+    - shared_examples
+    - shared_examples_for
+    - skip
+    - specify
+    - to
+    - to_not
+    - xcontext
+    - xdescribe
+    - xit
+Rails/Date:
+  Enabled: true
+  Exclude:
+    - 'app/**/*'
+    - 'lib/**/*'
+Style/BlockDelimiters:
+  Enabled: true
+  Exclude:
+    - 'app/**/*'
+    - 'lib/**/*'
