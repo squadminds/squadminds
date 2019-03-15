@@ -1,0 +1,34 @@
+version: '2'
+services:
+
+  bnb_db:
+    image: postgres
+    volumes:
+      - BNB_DB:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: 'bnb_user'
+      POSTGRES_PASSWORD: 'bnb_password'
+      POSTGRES_DB: 'bnbitservices'
+    ports:
+      - "5432:5432"
+
+  bnbitservices:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/bnbitservices
+    ports:
+      - "3000:3000"
+    depends_on:
+      - bnb_db
+    links:
+      - bnb_db
+    environment:
+      LAUNCHY_DRY_RUN: 'true'
+      BROWSER: '/usr/bin/lynx'
+      DATABASE_URL: postgresql://bnb_user:bnb_password@bnb_db/bnbitservices
+      RAILS_MAX_THREADS: 5
+
+volumes:
+  BNB_DB:
+    external: true
