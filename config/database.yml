@@ -6,11 +6,11 @@ default: &default
 
 development:
   <<: *default
-  database: healthtree_development_live
+  database: squadminds_dev
 
 test:
   <<: *default
-  database: healthtree_test
+  database: squadminds_test
 
 production:
   <<: *default

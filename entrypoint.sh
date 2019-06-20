@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-rm -f /bnbitservices/tmp/pids/server.pid
+rm -f /squadminds/tmp/pids/server.pid
 
 exec "$@"

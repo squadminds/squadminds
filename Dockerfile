@@ -1,11 +1,11 @@
 FROM ruby:2.6.1
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client lynx
-RUN mkdir /bnbitservices
-WORKDIR /bnbitservices
-COPY Gemfile /bnbitservices/Gemfile
-COPY Gemfile.lock /bnbitservices/Gemfile.lock
+RUN mkdir /squadminds
+WORKDIR /squadminds
+COPY Gemfile /squadminds/Gemfile
+COPY Gemfile.lock /squadminds/Gemfile.lock
 RUN bundle install
-COPY . /bnbitservices
+COPY . /squadminds
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh

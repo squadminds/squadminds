@@ -1,18 +1,16 @@
-Guidelines: https://github.com/HealthTree/guidelines
-
 ## Production environment
 
-[![Codeship Status for bnbitservices/bnbitservices](https://app.codeship.com/projects/e0ea9670-2897-0137-7f59-562ae01a5018/status?branch=master)](https://app.codeship.com/projects/330818)
+[![Codeship Status for squadminds/squadminds](https://app.codeship.com/projects/e0ea9670-2897-0137-7f59-562ae01a5018/status?branch=master)](https://app.codeship.com/projects/330818)
 
 This project is hosted at [Heroku](http://heroku.com)
 
-The URL for this project is: http://www.bnbitservices.com (https://bnbitservices-production.herokuapp.com)
+The URL for this project is: http://www.squadmindsinc.com (https://squadminds-production.herokuapp.com)
 
 ## Staging environment
 
-[![Codeship Status for bnbitservices/bnbitservices](https://app.codeship.com/projects/e0ea9670-2897-0137-7f59-562ae01a5018/status?branch=develop)](https://app.codeship.com/projects/330818)
+[![Codeship Status for squadminds/squadminds](https://app.codeship.com/projects/e0ea9670-2897-0137-7f59-562ae01a5018/status?branch=develop)](https://app.codeship.com/projects/330818)
 
-https://bnbitservices-staging.herokuapp.com
+https://squadminds-staging.herokuapp.com
 
 ## Project main dependencies
 
@@ -48,13 +46,13 @@ Dependencies:
 * [Docker](https://www.docker.com/)(OPTIONAL: just when using docker for orchestration)
 
 1. Create DB volume
-        $ docker volume create --name=BNB_DB
+        $ docker volume create --name=SquadMinds_DB
 
 2. Build the project:
         $ docker-compose build
 
 3. Set up database:
-        $ docker-compose run bnbitservices bundle exec rails db:setup
+        $ docker-compose run squadminds bundle exec rails db:setup
 
 4. Run the project:
         $ docker-compose up
