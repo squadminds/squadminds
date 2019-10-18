@@ -5,7 +5,7 @@
 canvas#dotty
 .global-overlay
 section#home.parallax-div
-  // img.brand-logo.text-intro.opacity-0[src="img/logo.png" alt=""]
+  img.brand-logo.text-intro.opacity-0[src="img/logo.png" alt=""]
   .content
     h1.text-intro.opacity-0
       | Hey Guys!
@@ -139,11 +139,11 @@ section#info-part
         h4
           | Get in touch with us!
         p
-          / i.icon.ion-ios-telephone
-          / strong
-          /   | Phone :
-          / |  (+91) 90-4175-7415 
-          / br
+          i.icon.ion-ios-telephone
+          strong
+            |  Phone :
+          |  0172-3811040
+          br
           i.icon.ion-ios-email
           strong
             |  Email: 
@@ -153,16 +153,12 @@ section#info-part
           i.icon.ion-ios-location
           strong
             |  Location: 
-          |  C-205, 6TH FLOOR, SM HEIGHTS, PHASE 8B INDUSTRIAL AREA, MOHALI, PUNJAB.
+          |  C-205, SM HEIGHTS, 5TH FLOOR, PHASE 8B INDUSTRIAL AREA, MOHALI, PUNJAB.
 footer
   .social-icons
-    a[href="#"]
+    a[href="https://www.facebook.com/squadminds/" target="_blank" rel="nofollow"]
       i.fa.fa-facebook
-    a[href="#"]
-      i.fa.fa-twitter
-    a[href="#"]
-      i.fa.fa-google-plus
-    a[href="#"]
+    a[href="https://www.linkedin.com/company/squadminds" target="_blank" rel="nofollow"]
       i.fa.fa-linkedin
   p.copyright
     |  © SquadMinds - Achieve your ideas
@@ -195,7 +191,7 @@ footer
 - content_for :extra_page_js do
   javascript:
     $("#getting-started")
-			.countdown("2019/07/30 00:00:00", function(event) {
+			.countdown("2020/03/01 00:00:00", function(event) {
 				$(this).html(
 					event.strftime('<strong>%D Days</strong> %Hh %Mm %Ss')
 				);
