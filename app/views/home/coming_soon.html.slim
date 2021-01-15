@@ -1,198 +1,367 @@
-#loading
-  #preloader
-    span
-    span
-canvas#dotty
-.global-overlay
-section#home.parallax-div
-  img.brand-logo.text-intro.opacity-0[src="img/logo.png" alt=""]
-  .content
-    h1.text-intro.opacity-0
-      | Hey Guys!
-      br
-      | Website is Coming Soon...
-    p.text-intro.opacity-0
-      | SquadMinds is all about focusing towards customer needs and giving best IT services in the market. Achieve your Vision & Ideas with us!
-      br
-      strong
-        | 24/7 Support.
-    nav
-      ul
-        li
-          a.light-btn.text-intro.opacity-0[href="#info-part"]
-            | Scroll or Click Me
-        / li
-        /   a.action-btn.trigger.text-intro.opacity-0[href="#newsletter"]
-        /     | Be Notified!
-section#info-part
-  .content
+/! Start Preloader Area
+.preloader
+  .loader
+    .sbl-half-circle-spin
+      div
+/! End Preloader Area
+/! Start Navbar Area
+.navbar-area
+  .tracer-responsive-nav
+    .container
+      .tracer-responsive-menu
+        .logo
+          a href="index-7.html" 
+            = image_tag("logo.png", width: "100", alt: "logo")
+  .tracer-nav
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand href="index-7.html" 
+          = image_tag("logo.png", width: "175", alt: "logo")
+        .collapse.navbar-collapse.mean-menu
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link.active href="#"  Home
+            li.nav-item
+              a.nav-link href="#"  About Us
+            li.nav-item
+              a.nav-link href="#"  Services
+          .others-option.d-flex.align-items-center
+            .option-item
+              a.default-btn href="contact.html" 
+                i.flaticon-right
+                | Contact Us
+                span
+  .others-option-for-responsive
+    .container
+      .dot-menu
+        .inner
+          .circle.circle-one
+          .circle.circle-two
+          .circle.circle-three
+      .container
+        .option-inner
+          .others-option
+            .option-item
+              a.default-btn href="contact.html" 
+                i.flaticon-right
+                | Contact Us
+                span
+/! End Navbar Area
+/! Start Main Banner Area
+.it-services-banner
+  .container
+    .row.align-items-center
+      .col-lg-6.col-md-12
+        .main-banner-content
+          h1.wow.fadeInLeft data-wow-delay="00ms" data-wow-duration="1000ms"  Looking for the adept professionals to establish your business digitally?
+          p.wow.fadeInLeft data-wow-delay="100ms" data-wow-duration="1000ms"  We at Sqauadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
+          /!
+            | <div class="btn-box"
+            | <a href="about-us-1.html" class="default-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="flaticon-right"></i>Get Started<span></span></a
+            | </div
+      .col-lg-6.col-md-12
+        .main-banner-image.wow.fadeInUp data-revert="true" data-speed="0.06" data-wow-delay="00ms" data-wow-duration="1000ms" 
+          = image_tag("banner-img1.png")
+/! End Main Banner Area
+/! Start Solutions Area
+section.solutions-area.pb-70
+  .container
+    .section-title
+      span.sub-title
+        /!= image_tag("star-icon.png")
+        | So Here’s What We Do
+      h2
+        | Looking for the adept professionals to establish your business digitally?
+        span.overlay
+      p We at Sqauadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
     .row
-      .col-xs-12.col-sm-6.col-lg-6.box-info
-        .box-info-light.equalizer
-          span.icon.icon-clock
-            i.icon.ion-ios-clock-outline
+      .col-lg-4.col-md-6.col-sm-6
+        .single-solutions-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
+          .icon
+            i.flaticon-rocket
           h3
-            | Website coming in : 
-            #getting-started
-          p.mb-mobile-30
-            | SquadMinds provides services for both web & mobile applications. SquadMinds covers domains like Healthcare, E-Commerce & Business Automation. We are experts in technologies like Ruby on Rails(ROR), Django (Python), Laravel, CakePHP, Shopify Apps and MEAN & MERN Stacks.
-      .col-xs-12.col-sm-6.col-lg-6.box-info
-        .box-info-dark.equalizer
-          span.icon
-            i.icon.ion-ios-color-wand-outline
-          h3.text-uppercase.color-grey
-            | Bring your ideas to life
-          p.mb-mobile-30
-            | SquadMinds provides consultation & assist you to achieve your vision. We work in latest market trends as well in some old technologies. We suggest you the TECH stack according to you requirements not just to gain profit. We believe in customer satisfaction & happiness and that will indirectly passed to us.
-  / .content
-  /   .photo-line
-  /     .my-gallery.row[itemscope itemtype="http://schema.org/ImageGallery"]
-  /       figure.col-xs-12.col-sm-6.col-lg-3[itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"]
-  /         a.box-picture[href="img/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280"]
-  /           img.img-responsive[src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work"]
-  /           p
-  /             | Open
-  /         figcaption[itemprop="caption description"]
-  /           .photo-details
-  /             h4
-  /               | Merveilles cachées
-  /             h5
-  /               | France
-  /             p
-  /               | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-  /       figure.col-xs-12.col-sm-6.col-lg-3[itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"]
-  /         a.box-picture[href="img/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280"]
-  /           img.img-responsive[src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work"]
-  /           p
-  /             | Voir
-  /         figcaption[itemprop="caption description"]
-  /           .photo-details
-  /             h4
-  /               | Freund des Berges
-  /             h5
-  /               | Deutschland
-  /             p
-  /               | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-  /       figure.col-xs-12.col-sm-6.col-lg-3[itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"]
-  /         a.box-picture[href="img/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280"]
-  /           img.img-responsive[src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work"]
-  /           span.widget-angle-bottom-left
-  /             span.icon-text
-  /               i.icon.ion-ios-star
-  /           p
-  /             | Ansicht
-  /         figcaption[itemprop="caption description"]
-  /           .photo-details
-  /             h4
-  /               | Mellan himmel och hav
-  /             h5
-  /               | Sweden
-  /             p
-  /               | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-  /       figure.col-xs-12.col-sm-6.col-lg-3[itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"]
-  /         a.box-picture[href="img/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280"]
-  /           img.img-responsive[src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work"]
-  /           span.widget-angle-top-right
-  /             span.icon-text
-  /               i.icon.ion-ios-star
-  /           p
-  /             | Vista
-  /         figcaption[itemprop="caption description"]
-  /           .photo-details
-  /             h4
-  /               | In the wilderness
-  /             h5
-  /               | United States
-  /             p
-  /               | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-  / #newsletter.newsletter-block
-  /   h2
-  /     | You like taking the lead of line?
-  /   p
-  /     | Being the first to know always feels great... Signing up to our newsletter gives you 
-  /     br
-  /     strong
-  /       | Exclusive access to our Grand Opening!
-  /   #subscribe
-  /     form#notifyMe[action="php/notify-me.php" method="POST"]
-  /       .form-group
-  /         .controls
-  /           input#mail-sub.form-control.email.srequiredField[type="text" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'"]
-  /           i.fa.fa-spinner.opacity-0
-  /           button.btn.btn-lg.submit
-  /             | Notify Me
-  /           .clear
-  /     .block-message
-  /       .message
-  /         p.notify-valid
-  .content.bottom-part
+            a href="single-services-1.html"  Code Security
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+          a.view-details-btn href="single-services-1.html"  View Details
+      .col-lg-4.col-md-6.col-sm-6
+        .single-solutions-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
+          .icon
+            i.flaticon-laptop
+          h3
+            a href="single-services-1.html"  Team Management
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+          a.view-details-btn href="single-services-1.html"  View Details
+      .col-lg-4.col-md-6.col-sm-6.offset-lg-0.offset-sm-3.offset-md-3
+        .single-solutions-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
+          .icon
+            i.flaticon-money
+          h3
+            a href="single-services-1.html"  Access Controlled
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+          a.view-details-btn href="single-services-1.html"  View Details
+/! End Solutions Area
+/! Start Our Mission Area
+section.our-mission-area.pb-100
+  .container-fluid
+    .row.align-items-center
+      .col-lg-6.col-md-12
+        .our-mission-content
+          .content
+            span.sub-title
+              /!= image_tag("star-icon.png", width: "100", alt: "logo")
+              img alt="image" src="img/star-icon.png" /
+              | Services
+            h2 Design & Development
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            ul.our-mission-list.mb-0
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | Responsive Design
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | React Development
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | Apps Development
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | Laravel Development
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | UX/UI Design
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | E-commerce Design
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | Web Design
+              li
+                span
+                .icon
+                  i.flaticon-tick
+                | Print Ready Design
+      .col-lg-6.col-md-12
+        .our-mission-image
+          img.wow.fadeInUp alt="image" data-wow-delay="300ms" data-wow-duration="1500ms" src="img/service2.png" /
+/! End Our Mission Area
+/! Start Services Area
+section.services-area.pt-100.pb-70.bg-f1f8fb
+  .container
+    .section-title
+      span.sub-title
+        img alt="image" src="img/star-icon.png" /
+        | Our Features
+      h2
+        | Why Choose Us
+        span.overlay
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
     .row
-      .col-xs-12.col-sm-6.col-lg-6.contact-box
-        h4
-          | © SquadMinds
-        p
-          |  If you have any further suggestions, questions or comments, here are the best ways to connect with us!
-          br
-          strong
-            | We can't wait to hear from you!
-      .col-xs-12.col-sm-6.col-lg-6.contact-box
-        h4
-          | Get in touch with us!
-        p
-          i.icon.ion-ios-telephone
-          strong
-            |  Phone :
-          |  0172-3811040
-          br
-          i.icon.ion-ios-email
-          strong
-            |  Email: 
-          a.phone-mail-link[href="mailto:info@squadmindsinc.com"]
-            | info@squadmindsinc.com
-          br
-          i.icon.ion-ios-location
-          strong
-            |  Location: 
-          |  C-205, SM HEIGHTS, 5TH FLOOR, PHASE 8B INDUSTRIAL AREA, MOHALI, PUNJAB.
-footer
-  .social-icons
-    a[href="https://www.facebook.com/squadminds/" target="_blank" rel="nofollow"]
-      i.fa.fa-facebook
-    a[href="https://www.linkedin.com/company/squadminds" target="_blank" rel="nofollow"]
-      i.fa.fa-linkedin
-  p.copyright
-    |  © SquadMinds - Achieve your ideas
-.pswp[tabindex="-1" role="dialog" aria-hidden="true"]
-  .pswp__bg
-  .pswp__scroll-wrap
-    .pswp__container
-      .pswp__item
-      .pswp__item
-      .pswp__item
-    .pswp__ui.pswp__ui--hidden
-      .pswp__top-bar
-        .pswp__counter
-        button.pswp__button.pswp__button--close[title="Close (Esc)"]
-        button.pswp__button.pswp__button--share[title="Share"]
-        button.pswp__button.pswp__button--fs[title="Toggle fullscreen"]
-        button.pswp__button.pswp__button--zoom[title="Zoom in/out"]
-        .pswp__preloader
-          .pswp__preloader__icn
-            .pswp__preloader__cut
-              .pswp__preloader__donut
-      .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
-        .pswp__share-tooltip
-      button.pswp__button.pswp__button--arrow--left[title="Previous (arrow left)"]
-
-      button.pswp__button.pswp__button--arrow--right[title="Next (arrow right)"]
-
-      .pswp__caption
-        .pswp__caption__center
-- content_for :extra_page_js do
-  javascript:
-    $("#getting-started")
-			.countdown("2020/03/01 00:00:00", function(event) {
-				$(this).html(
-					event.strftime('<strong>%D Days</strong> %Hh %Mm %Ss')
-				);
-		});
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon1.png" /
+          h3 Incredible Infrastructure
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon2.png" /
+          h3 Email Notifications
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon3.png" /
+          h3 Simple Dashboard
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon4.png" /
+          h3 Information Retrieval
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon5.png" /
+          h3 Drag and Drop
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      .col-lg-4.col-md-6.col-sm-6
+        .single-services-item-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
+          .icon
+            img alt="image" src="img/services/icon6.png" /
+          h3 Deadline Reminders
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+/! End Services Area
+/! Start Projects Area
+section.projects-area.bg-color.pt-100.pb-70
+  .container
+    .section-title
+      span.sub-title
+        img alt="image" src="img/star-icon.png" /
+        | Recent Projects
+      h2
+        | Check Some Of Our Recent Work
+        span.overlay
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    .row
+      .col-lg-4.col-md-6
+        .single-projects-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
+          .image
+            img alt="image" src="img/projects/img1.jpg" /
+            a.link-btn href="single-case-studies-1.html" 
+              i.bx.bx-plus
+          .content
+            h3
+              a href="single-case-studies-1.html"  Movie Recommendation
+            span System Project
+      .col-lg-4.col-md-6
+        .single-projects-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
+          .image
+            img alt="image" src="img/projects/img2.jpg" /
+            a.link-btn href="single-case-studies-1.html" 
+              i.bx.bx-plus
+          .content
+            h3
+              a href="single-case-studies-1.html"  Customer Segmentation
+            span Machine Learning
+      .col-lg-4.col-md-6
+        .single-projects-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
+          .image
+            img alt="image" src="img/projects/img3.jpg" /
+            a.link-btn href="single-case-studies-1.html" 
+              i.bx.bx-plus
+          .content
+            h3
+              a href="single-case-studies-1.html"  Data Analysis
+            span Web Project
+/! End Projects Area
+/! Start Testimonials Area
+section.testimonials-area.pt-100.bg-f1f8fb
+  .container
+    .section-title
+      span.sub-title
+        img alt="image" src="img/star-icon.png" /
+        | Testimonials
+      h2
+        | What Our Clients are Saying?
+        span.overlay
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    .testimonials-slides.owl-carousel.owl-theme
+      .single-testimonials-item
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        .client-info
+          .d-flex.justify-content-center.align-items-center
+            img alt="image" src="img/testimonials/img1.jpg" /
+            .title
+              h3 Alex Maxwell
+              span CEO at EnvyTheme
+      .single-testimonials-item
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        .client-info
+          .d-flex.justify-content-center.align-items-center
+            img alt="image" src="img/testimonials/img2.jpg" /
+            .title
+              h3 David Warner
+              span CEO at Envato
+      .single-testimonials-item
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        .client-info
+          .d-flex.justify-content-center.align-items-center
+            img alt="image" src="img/testimonials/img3.jpg" /
+            .title
+              h3 Sarah Taylor
+              span CEO at ThemeForest
+    .testimonials-view-btn.text-center
+      a.default-btn href="testimonials.html" 
+        i.flaticon-view
+        | Check Out All Reviews
+        span
+  .shape-img1
+    img alt="image" src="img/shape/shape1.svg" /
+/! End Testimonials Area
+/! Start Project Start Area
+section.project-start-area.ptb-100
+  .container
+    .row.align-items-center
+      .col-lg-6.col-md-12
+        .project-start-image
+          img alt="image" data-revert="true" data-speed="0.06" src="img/project-start1.png" /
+      .col-lg-6.col-md-12
+        .project-start-content
+          h2.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms"  We Like to Start Your Project With Us
+          p.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          a.default-btn.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" href="contact.html" 
+            i.flaticon-web
+            | Get Started
+            span
+  .circle-shape1
+    img alt="image" src="img/shape/circle-shape1.png" /
+/! End Project Start Area
+/! Start Footer Area
+footer.footer-area.bg-color
+  .container
+    .row
+      .col-lg-4.col-md-6.col-sm-6
+        .single-footer-widget
+          a.logo href="index.html" 
+            img alt="logo" src="img/logo.png" width="80" /
+          p Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+          ul.social-link
+            li
+              a.d-block href="#" target="_blank" 
+                i.bx.bxl-facebook
+            li
+              a.d-block href="#" target="_blank" 
+                i.bx.bxl-twitter
+            li
+              a.d-block href="#" target="_blank" 
+                i.bx.bxl-instagram
+            li
+              a.d-block href="#" target="_blank" 
+                i.bx.bxl-linkedin
+      .col-lg-4.col-md-6.col-sm-6
+        .single-footer-widget.pl-5
+          h3 Explore
+          ul.footer-links-list
+            li
+              a href="index.html"  Home
+            li
+              a href="about-us-1.html"  About
+            li
+              a href="contact.html"  Portfolio
+            li
+              a href="contact.html"  Contact
+      .col-lg-4.col-md-6.col-sm-6
+        .single-footer-widget
+          h3 Address
+          ul.footer-contact-info
+            li
+              i.bx.bx-map
+              | 175 5th Ave, New York, NY 10010, United States
+            li
+              i.bx.bx-phone-call
+              a href="tel:+44587154756"  +1 (123) 456 7890
+            li
+              i.bx.bx-envelope
+              a href="mailto:hello@tracer.com"  hello@tracer.com
+  .footer-map
+    img alt="image" src="img/footer-map.png" /
+/! End Footer Area
+.go-top
+  i.flaticon-up
+/! Links of JS files
