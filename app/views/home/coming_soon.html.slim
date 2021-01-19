@@ -10,13 +10,11 @@
     .container
       .tracer-responsive-menu
         .logo
-          a href="index-7.html" 
-            = image_tag("logo.png", width: "100", alt: "logo")
+          = link_to image_tag("logo.png", width: "100", alt: "logo"), root_path
   .tracer-nav
     .container
       nav.navbar.navbar-expand-md.navbar-light
-        a.navbar-brand href="index-7.html" 
-          = image_tag("logo.png", width: "175", alt: "logo")
+        = link_to image_tag("logo.png", width: "175", alt: "logo"), root_path, class: "navbar-brand"
         .collapse.navbar-collapse.mean-menu
           ul.navbar-nav
             li.nav-item
@@ -27,7 +25,7 @@
               a.nav-link href="#"  Services
           .others-option.d-flex.align-items-center
             .option-item
-              a.default-btn href="contact.html" 
+              = link_to contact_path, class: "default-btn" do
                 i.flaticon-right
                 | Contact Us
                 span
@@ -54,7 +52,7 @@
       .col-lg-6.col-md-12
         .main-banner-content
           h1.wow.fadeInLeft data-wow-delay="00ms" data-wow-duration="1000ms"  Looking for the adept professionals to establish your business digitally?
-          p.wow.fadeInLeft data-wow-delay="100ms" data-wow-duration="1000ms"  We at Sqauadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
+          p.wow.fadeInLeft data-wow-delay="100ms" data-wow-duration="1000ms"  We at Squadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
           /!
             | <div class="btn-box"
             | <a href="about-us-1.html" class="default-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="flaticon-right"></i>Get Started<span></span></a
@@ -68,12 +66,12 @@ section.solutions-area.pb-70
   .container
     .section-title
       span.sub-title
-        /!= image_tag("star-icon.png")
+        = image_tag("star-icon.png")
         | So Here’s What We Do
       h2
         | Looking for the adept professionals to establish your business digitally?
         span.overlay
-      p We at Sqauadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
+      p We at Squadminds welcome you and invite you to initiate your digital journey with us where we are committed to scaling your business to newer heights!
     .row
       .col-lg-4.col-md-6.col-sm-6
         .single-solutions-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
@@ -108,62 +106,61 @@ section.our-mission-area.pb-100
         .our-mission-content
           .content
             span.sub-title
-              /!= image_tag("star-icon.png", width: "100", alt: "logo")
-              img alt="image" src="img/star-icon.png" /
+              = image_tag("star-icon.png", alt: "image")
               | Services
             h2 Design & Development
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
             ul.our-mission-list.mb-0
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | Responsive Design
+                  .icon
+                    i.flaticon-tick
+                  | Responsive Design
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | React Development
+                  .icon
+                    i.flaticon-tick
+                  | React Development
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | Apps Development
+                  .icon
+                    i.flaticon-tick
+                  | Apps Development
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | Laravel Development
+                  .icon
+                    i.flaticon-tick
+                  | Laravel Development
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | UX/UI Design
+                  .icon
+                    i.flaticon-tick
+                  | UX/UI Design
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | E-commerce Design
+                  .icon
+                    i.flaticon-tick
+                  | E-commerce Design
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | Web Design
+                  .icon
+                    i.flaticon-tick
+                  | Web Design
               li
                 span
-                .icon
-                  i.flaticon-tick
-                | Print Ready Design
+                  .icon
+                    i.flaticon-tick
+                  | Print Ready Design
       .col-lg-6.col-md-12
         .our-mission-image
-          img.wow.fadeInUp alt="image" data-wow-delay="300ms" data-wow-duration="1500ms" src="img/service2.png" /
+          = image_tag("service2.png", class: "wow fadeInUp", data: {"wow-delay": "300ms", "wow-duration": "1500ms"})
 /! End Our Mission Area
 /! Start Services Area
 section.services-area.pt-100.pb-70.bg-f1f8fb
   .container
     .section-title
       span.sub-title
-        img alt="image" src="img/star-icon.png" /
+        = image_tag("star-icon.png", alt: "image")
         | Our Features
       h2
         | Why Choose Us
@@ -173,37 +170,37 @@ section.services-area.pt-100.pb-70.bg-f1f8fb
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon1.png" /
+            = image_tag("services/icon1.png")
           h3 Incredible Infrastructure
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon2.png" /
+            = image_tag("services/icon2.png")
           h3 Email Notifications
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon3.png" /
+            = image_tag("services/icon3.png")
           h3 Simple Dashboard
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon4.png" /
+            = image_tag("services/icon4.png")
           h3 Information Retrieval
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon5.png" /
+            = image_tag("services/icon5.png")
           h3 Drag and Drop
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       .col-lg-4.col-md-6.col-sm-6
         .single-services-item-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
           .icon
-            img alt="image" src="img/services/icon6.png" /
+            = image_tag("services/icon6.png")
           h3 Deadline Reminders
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 /! End Services Area
@@ -212,7 +209,7 @@ section.projects-area.bg-color.pt-100.pb-70
   .container
     .section-title
       span.sub-title
-        img alt="image" src="img/star-icon.png" /
+        = image_tag("star-icon.png")
         | Recent Projects
       h2
         | Check Some Of Our Recent Work
@@ -222,7 +219,7 @@ section.projects-area.bg-color.pt-100.pb-70
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
           .image
-            img alt="image" src="img/projects/img1.jpg" /
+            = image_tag("projects/img1.jpg")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
@@ -232,7 +229,7 @@ section.projects-area.bg-color.pt-100.pb-70
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
           .image
-            img alt="image" src="img/projects/img2.jpg" /
+            = image_tag("projects/img2.jpg")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
@@ -242,7 +239,7 @@ section.projects-area.bg-color.pt-100.pb-70
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
           .image
-            img alt="image" src="img/projects/img3.jpg" /
+            = image_tag("projects/img3.jpg")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
@@ -255,7 +252,7 @@ section.testimonials-area.pt-100.bg-f1f8fb
   .container
     .section-title
       span.sub-title
-        img alt="image" src="img/star-icon.png" /
+        = image_tag("star-icon.png")
         | Testimonials
       h2
         | What Our Clients are Saying?
@@ -266,7 +263,7 @@ section.testimonials-area.pt-100.bg-f1f8fb
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
         .client-info
           .d-flex.justify-content-center.align-items-center
-            img alt="image" src="img/testimonials/img1.jpg" /
+            = image_tag("testimonials/img1.jpg")
             .title
               h3 Alex Maxwell
               span CEO at EnvyTheme
@@ -274,7 +271,7 @@ section.testimonials-area.pt-100.bg-f1f8fb
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
         .client-info
           .d-flex.justify-content-center.align-items-center
-            img alt="image" src="img/testimonials/img2.jpg" /
+            = image_tag("testimonials/img2.jpg")
             .title
               h3 David Warner
               span CEO at Envato
@@ -282,7 +279,7 @@ section.testimonials-area.pt-100.bg-f1f8fb
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
         .client-info
           .d-flex.justify-content-center.align-items-center
-            img alt="image" src="img/testimonials/img3.jpg" /
+            = image_tag("testimonials/img3.jpg")
             .title
               h3 Sarah Taylor
               span CEO at ThemeForest
@@ -292,7 +289,7 @@ section.testimonials-area.pt-100.bg-f1f8fb
         | Check Out All Reviews
         span
   .shape-img1
-    img alt="image" src="img/shape/shape1.svg" /
+    = image_tag("shape/shape1.svg")
 /! End Testimonials Area
 /! Start Project Start Area
 section.project-start-area.ptb-100
@@ -300,7 +297,7 @@ section.project-start-area.ptb-100
     .row.align-items-center
       .col-lg-6.col-md-12
         .project-start-image
-          img alt="image" data-revert="true" data-speed="0.06" src="img/project-start1.png" /
+          = image_tag("project-start1.png", data: {"revert": "true", "speed": "0.06"})
       .col-lg-6.col-md-12
         .project-start-content
           h2.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms"  We Like to Start Your Project With Us
@@ -310,58 +307,7 @@ section.project-start-area.ptb-100
             | Get Started
             span
   .circle-shape1
-    img alt="image" src="img/shape/circle-shape1.png" /
+    = image_tag("shape/circle-shape1.png")
 /! End Project Start Area
 /! Start Footer Area
-footer.footer-area.bg-color
-  .container
-    .row
-      .col-lg-4.col-md-6.col-sm-6
-        .single-footer-widget
-          a.logo href="index.html" 
-            img alt="logo" src="img/logo.png" width="80" /
-          p Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
-          ul.social-link
-            li
-              a.d-block href="#" target="_blank" 
-                i.bx.bxl-facebook
-            li
-              a.d-block href="#" target="_blank" 
-                i.bx.bxl-twitter
-            li
-              a.d-block href="#" target="_blank" 
-                i.bx.bxl-instagram
-            li
-              a.d-block href="#" target="_blank" 
-                i.bx.bxl-linkedin
-      .col-lg-4.col-md-6.col-sm-6
-        .single-footer-widget.pl-5
-          h3 Explore
-          ul.footer-links-list
-            li
-              a href="index.html"  Home
-            li
-              a href="about-us-1.html"  About
-            li
-              a href="contact.html"  Portfolio
-            li
-              a href="contact.html"  Contact
-      .col-lg-4.col-md-6.col-sm-6
-        .single-footer-widget
-          h3 Address
-          ul.footer-contact-info
-            li
-              i.bx.bx-map
-              | 175 5th Ave, New York, NY 10010, United States
-            li
-              i.bx.bx-phone-call
-              a href="tel:+44587154756"  +1 (123) 456 7890
-            li
-              i.bx.bx-envelope
-              a href="mailto:hello@tracer.com"  hello@tracer.com
-  .footer-map
-    img alt="image" src="img/footer-map.png" /
-/! End Footer Area
-.go-top
-  i.flaticon-up
-/! Links of JS files
+= render 'footer'
