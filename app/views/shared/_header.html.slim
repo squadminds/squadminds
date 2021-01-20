@@ -1,0 +1,47 @@
+/! Start Preloader Area
+.preloader
+  .loader
+    .sbl-half-circle-spin
+      div
+/! End Preloader Area
+/! Start Navbar Area
+.navbar-area
+  .tracer-responsive-nav
+    .container
+      .tracer-responsive-menu
+        .logo
+          = link_to image_tag("logo.png", width: "100", alt: "logo"), root_path
+  .tracer-nav
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        = link_to image_tag("logo.png", width: "175", alt: "logo"), root_path, class: "navbar-brand"
+        .collapse.navbar-collapse.mean-menu
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link.active href="/"  Home
+            li.nav-item
+              a.nav-link href="/about-us"  About Us
+            li.nav-item
+              a.nav-link href="/portfolio"  Portfolio
+          .others-option.d-flex.align-items-center
+            .option-item
+              = link_to contact_us_path, class: "default-btn" do
+                i.flaticon-right
+                | Contact Us
+                span
+  .others-option-for-responsive
+    .container
+      .dot-menu
+        .inner
+          .circle.circle-one
+          .circle.circle-two
+          .circle.circle-three
+      .container
+        .option-inner
+          .others-option
+            .option-item
+              a.default-btn href="contact.html" 
+                i.flaticon-right
+                | Contact Us
+                span
+/! End Navbar Area

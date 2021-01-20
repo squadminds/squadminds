@@ -1,0 +1,97 @@
+/! Start Page Title Area
+section.page-title-area
+  .container
+    .page-title-content
+      h2 Contact Us
+      ul
+        li
+          a href="index.html"  Home
+        li Contact Us
+  .shape-img1
+    = image_tag("shape/shape1.svg", alt: "image")
+  .shape-img2
+    = image_tag("shape/shape2.png", alt: "image")
+  .shape-img3
+    = image_tag("shape/shape3.png", alt: "image")
+/! End Page Title Area
+section.contact-info-area.pt-100.pb-70
+  .container
+    .row
+      .col-lg-4.col-md-6
+        .contact-info-box
+          .back-icon
+            i.bx.bx-map
+          .icon
+            i.bx.bx-map
+          h3 Our Address
+          p C-205, 5th Floor, Industrial Area, Sector 74, Sahibzada Ajit Singh Nagar, Punjab 140308
+      .col-lg-4.col-md-6
+        .contact-info-box
+          .back-icon
+            i.bx.bx-phone-call
+          .icon
+            i.bx.bx-phone-call
+          h3 Contact
+          p
+            | Mobile:
+            a href="tel:+0172-3811040"  0172-3811040
+          p
+            | E-mail:
+            a href="mailto:info@squadmindsinc.com"  info@squadmindsinc.com
+      .col-lg-4.col-md-6.offset-lg-0.offset-md-3
+        .contact-info-box
+          .back-icon
+            i.bx.bx-time-five
+          .icon
+            i.bx.bx-time-five
+          h3 Hours of Operation
+          p Monday - Friday: 09:00 - 20:00
+          p Sunday & Saturday: 10:30 - 22:00
+/! End Contact Info Area
+/! Start Contact Area
+section.contact-area.pb-100
+  .container
+    .section-title
+      span.sub-title
+        = image_tag("star-icon.png", alt: "image")
+        | Get in Touch
+      h2
+        | Ready to Get Started?
+        span.overlay
+      p Your email address will not be published. Required fields are marked *
+    .row
+      .col-lg-6.col-md-12
+        .contact-image data-tilt=""
+          = image_tag("contact.png", alt: "image")
+      .col-lg-6.col-md-12
+        .contact-form
+          form#contactForm
+            .row
+              .col-lg-12.col-md-6
+                .form-group
+                  input#name.form-control data-error=("Please enter your name") name="name" placeholder=("Your name") required="" type="text" /
+                  .help-block.with-errors
+              .col-lg-12.col-md-6
+                .form-group
+                  input#email.form-control data-error=("Please enter your email") name="email" placeholder=("Your email address") required="" type="email" /
+                  .help-block.with-errors
+              .col-lg-12.col-md-12
+                .form-group
+                  input#phone_number.form-control data-error=("Please enter your phone number") name="phone_number" placeholder=("Your phone number") required="" type="text" /
+                  .help-block.with-errors
+              .col-lg-12.col-md-12
+                .form-group
+                  textarea#message.form-control cols="30" data-error=("Please enter your message") name="message" placeholder=("Write your message...") required="" rows="6" 
+                  .help-block.with-errors
+              .col-lg-12.col-md-12
+                button.default-btn type="submit" 
+                  i.flaticon-tick
+                  | Send Message
+                  span
+                #msgSubmit.h3.text-center.hidden
+                .clearfix
+/! End Contact Area
+/! Start Map Area
+#map
+  iframe[src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.4021507858806!2d76.68286171458989!3d30.707092981646117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feff786fc6e13%3A0xf58055bb138c0c8f!2sSquadMinds%20Private%20Limited!5e0!3m2!1sen!2sin!4v1611060346286!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"]
+/! End Map Area
