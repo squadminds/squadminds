@@ -2,10 +2,9 @@ doctype html
 html.no-js[lang="en-us"]
   head
     title
-      | SquadMinds
+      | SquadMinds - Achieve Your Vision
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    meta[name="author" content="SquadMinds"]
     link[rel="shortcut icon" href="/favicon.png"]
     link[rel="apple-touch-icon" sizes="144x144" href="/favicon-retina-ipad.png"]
     link[rel="apple-touch-icon" sizes="114x114" href="/favicon-retina-iphone.png"]
@@ -13,9 +12,22 @@ html.no-js[lang="en-us"]
     link[rel="apple-touch-icon" sizes="57x57" href="/favicon-standard-iphone.png"]
     = csrf_meta_tags
     = csp_meta_tag
+    meta content=("Squadminds - Achieve you vision") name="title" /
+    meta content=("SquadMinds is all about focusing towards customer needs and giving best IT services in the market. Achieve your Vision & Ideas with us!") name="description" /
+    meta content=("web development, mobile development, ror, ruby, python, html, reactjs, reactnative, html, css, jquery, laravel, php, cakephp, it solutions") name="keywords" /
+    meta content="index, nofollow" name="robots" /
+    meta content=("text/html; charset=utf-8") http-equiv="Content-Type" /
+    meta content="English" name="language" /
+    meta content=("30 days") name="revisit-after" /
+    meta content=("SquadMinds Private Limited") name="author" /
+
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag :modernizr
   body
+    /! Start Header Area
+    = render 'shared/header'
     = yield
+    /! Start Footer Area
+    = render 'shared/footer'
     = javascript_include_tag 'application'
     = yield :extra_page_js
