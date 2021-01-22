@@ -151,6 +151,10 @@ a:hover {
   padding-bottom: 70px;
 }
 
+.pb-30{
+  padding-bottom: 30px;
+}
+
 .bg-e3fbff {
   background-color: #e3fbff;
 }
@@ -237,7 +241,7 @@ a:hover {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
 }
 
 .section-title .sub-title {
@@ -2293,8 +2297,8 @@ Main Banner Area CSS
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 220px;
-  padding-bottom: 210px;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .it-services-banner .main-banner-content {
@@ -3601,7 +3605,7 @@ Services Area CSS
   text-align: center;
   margin-bottom: 30px;
   background-color: #ffffff;
-  padding: 45px 30px;
+  padding: 30px 30px;
   border-radius: 5px;
 }
 

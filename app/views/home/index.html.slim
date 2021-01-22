@@ -15,7 +15,7 @@
           = image_tag("banner-img1.png")
 /! End Main Banner Area
 /! Start Solutions Area
-section.solutions-area.pb-70
+section.solutions-area.pb-30
   .container
     .section-title
       span.sub-title
@@ -109,7 +109,7 @@ section.our-mission-area.pb-100
           = image_tag("service2.png", class: "wow fadeInUp", data: {"wow-delay": "300ms", "wow-duration": "1500ms"})
 /! End Our Mission Area
 /! Start Services Area
-section.services-area.pt-100.pb-70.bg-f1f8fb
+section.services-area.bg-f1f8fb
   .container
     .section-title
       span.sub-title
@@ -172,33 +172,33 @@ section.projects-area.bg-color.pt-100.pb-70
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="00ms" data-wow-duration="1500ms" 
           .image
-            = image_tag("projects/img1.jpg")
+            = image_tag("journallifehome.png", size: "750x600")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
             h3
-              a href="single-case-studies-1.html"  Movie Recommendation
-            span System Project
+              a href="single-case-studies-1.html"  JournalLife
+            span Ruby on Rails
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="100ms" data-wow-duration="1500ms" 
           .image
-            = image_tag("projects/img2.jpg")
+            = image_tag("siestakeychamber.png")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
             h3
-              a href="single-case-studies-1.html"  Customer Segmentation
-            span Machine Learning
+              a href="single-case-studies-1.html"  SiestaKeyChamber
+            span Ruby on Rails
       .col-lg-4.col-md-6
         .single-projects-box.wow.fadeInUp data-wow-delay="200ms" data-wow-duration="1500ms" 
           .image
-            = image_tag("projects/img3.jpg")
+            = image_tag("sanddollarone.png")
             a.link-btn href="single-case-studies-1.html" 
               i.bx.bx-plus
           .content
             h3
-              a href="single-case-studies-1.html"  Data Analysis
-            span Web Project
+              a href="single-case-studies-1.html"  SandDollarOne
+            span WordPress
 /! End Projects Area
 /! Start Testimonials Area
 section.testimonials-area.pt-100.bg-f1f8fb
@@ -213,34 +213,42 @@ section.testimonials-area.pt-100.bg-f1f8fb
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
     .testimonials-slides.owl-carousel.owl-theme
       .single-testimonials-item
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        p Working with this team was brilliant from start to finish. Explained what they were going to do upfront and produced an outstanding piece of work for us. Will be using this Team again for sure.
         .client-info
           .d-flex.justify-content-center.align-items-center
             = image_tag("testimonials/img1.jpg")
             .title
-              h3 Alex Maxwell
-              span CEO at EnvyTheme
+              h3 Olle Bohlin
+              span CEO
       .single-testimonials-item
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        p They are extremely professional at delivery. Fantastic work ethic and delivered in TOT. I would recommend their services to anyone.
         .client-info
           .d-flex.justify-content-center.align-items-center
             = image_tag("testimonials/img2.jpg")
             .title
-              h3 David Warner
+              h3 Lee Jones
               span CEO at Envato
       .single-testimonials-item
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        p Everything delivered well on the React and ROR based web application, they were one of the primary contributors from the start. They are disciplined, open to feedback and produces a good quantity of work within the deadline.
         .client-info
           .d-flex.justify-content-center.align-items-center
             = image_tag("testimonials/img3.jpg")
             .title
-              h3 Sarah Taylor
+              h3 Akinori Nakajima
               span CEO at ThemeForest
+      .single-testimonials-item
+        p It was great working with SquadMinds Team, Very Cooperative. Highly recommend.
+        .client-info
+          .d-flex.justify-content-center.align-items-center
+            = image_tag("testimonials/img1.jpg")
+            .title
+              h3 Oliver Jutzi
+              span CEO
     .testimonials-view-btn.text-center
-      a.default-btn href="testimonials.html" 
-        i.flaticon-view
-        | Check Out All Reviews
-        span
+      = link_to testimonials_path, class: "default-btn" do
+                i.flaticon-view
+                | Check Out All Reviews
+                span
   .shape-img1
     = image_tag("shape/shape1.svg")
 /! End Testimonials Area
