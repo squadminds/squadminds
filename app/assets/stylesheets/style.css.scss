@@ -1486,7 +1486,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(main-banner/bg.png);
+  background-image: image-url("main-banner/bg.png");
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1653,7 +1653,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(main-banner/bg2.png);
+  background-image: image-url("main-banner/bg2.png");
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1925,7 +1925,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(main-banner/bg3.png);
+  background-image: image-url("main-banner/bg3.png");
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1970,11 +1970,11 @@ Main Banner Area CSS
 }
 
 .main-banner-item.item-bg1 {
-  background-image: url(main-banner/main-banner1.jpg);
+  background-image: image-url("main-banner/main-banner1.jpg");
 }
 
 .main-banner-item.item-bg2 {
-  background-image: url(main-banner/main-banner2.jpg);
+  background-image: image-url("main-banner/main-banner2.jpg");
 }
 
 .banner-item-content {
@@ -2123,7 +2123,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(main-banner/bg4.jpg);
+  background-image: image-url("main-banner/bg4.jpg");
   background-position: bottom right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2293,7 +2293,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(banner-bg.png);
+  background-image: image-url("banner-bg.png");
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2308,7 +2308,7 @@ Main Banner Area CSS
 .seo-agency-banner {
   position: relative;
   z-index: 1;
-  background: transparent url(banner-bg2.jpg) left top no-repeat;
+  background: transparent image-url("banner-bg2.jpg") left top no-repeat;
   padding-top: 270px;
   padding-bottom: 150px;
 }
@@ -3090,7 +3090,7 @@ Funfacts Area CSS
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(funfacts/bg.jpg);
+  background-image: image-url("funfacts/bg.jpg");
 }
 
 .funfacts-area.bg-image .single-funfacts-item h3 {
@@ -5635,7 +5635,7 @@ Projects Area CSS
 }
 
 .projects-area.bg-color {
-  background-image: url(black-bg.jpg);
+  background-image: image-url("black-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6067,7 +6067,7 @@ Scientist Area CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px 5px 0 0;
-  background-image: url(scientist/shape1.png);
+  background-image: image-url("scientist/shape1.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6130,7 +6130,7 @@ Scientist Area CSS
 }
 
 .col-lg-3:nth-child(2) .single-scientist-box .image::before, .col-lg-3:nth-child(4) .single-scientist-box .image::before, .col-lg-3:nth-child(6) .single-scientist-box .image::before, .col-lg-3:nth-child(8) .single-scientist-box .image::before, .col-lg-3:nth-child(10) .single-scientist-box .image::before {
-  background-image: url(scientist/shape2.png);
+  background-image: image-url("scientist/shape2.png");
 }
 
 .scientist-section-title .sub-title {
@@ -9762,7 +9762,7 @@ Blog Details Area CSS
   height: 115px;
   border-radius: 5px 5px 0 0;
   background-color: #ff5d22;
-  background-image: url(bg.jpg);
+  background-image: image-url("bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10424,7 +10424,7 @@ Page Title Area CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(page-title-bg.jpg) right top no-repeat;
+  background: transparent image-url("page-title-bg.jpg") right top no-repeat;
   padding-top: 200px;
   padding-bottom: 100px;
 }
@@ -10742,15 +10742,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_tracer_posts_thumb .item .thumb .fullimage.bg1 {
-  background-image: url(blog/img9.jpg);
+  background-image: image-url("blog/img9.jpg");
 }
 
 .widget-area .widget_tracer_posts_thumb .item .thumb .fullimage.bg2 {
-  background-image: url(blog/img8.jpg);
+  background-image: image-url("blog/img8.jpg");
 }
 
 .widget-area .widget_tracer_posts_thumb .item .thumb .fullimage.bg3 {
-  background-image: url(blog/img7.jpg);
+  background-image: image-url("blog/img7.jpg");
 }
 
 .widget-area .widget_tracer_posts_thumb .item .thumb::before, .widget-area .widget_tracer_posts_thumb .item .thumb::after {
@@ -10923,15 +10923,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_popular_products .item .thumb .fullimage.bg1 {
-  background-image: url(products/img7.jpg);
+  background-image: image-url("products/img7.jpg");
 }
 
 .widget-area .widget_popular_products .item .thumb .fullimage.bg2 {
-  background-image: url(products/img8.jpg);
+  background-image: image-url("products/img8.jpg");
 }
 
 .widget-area .widget_popular_products .item .thumb .fullimage.bg3 {
-  background-image: url(products/img9.jpg);
+  background-image: image-url("products/img9.jpg");
 }
 
 .widget-area .widget_popular_products .item .thumb::before, .widget-area .widget_popular_products .item .thumb::after {
@@ -11060,15 +11060,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg1 {
-  background-image: url(courses/img1.jpg);
+  background-image: image-url("courses/img1.jpg");
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg2 {
-  background-image: url(courses/img2.jpg);
+  background-image: image-url("courses/img2.jpg");
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg3 {
-  background-image: url(courses/img3.jpg);
+  background-image: image-url("courses/img3.jpg");
 }
 
 .widget-area .widget_recent_courses .item .thumb::before, .widget-area .widget_recent_courses .item .thumb::after {
@@ -11401,7 +11401,7 @@ Coming Soon Area CSS
   position: relative;
   z-index: 1;
   background: #f6f7fb;
-  background-image: url(coming-soon-bg.jpg);
+  background-image: image-url("coming-soon-bg.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
